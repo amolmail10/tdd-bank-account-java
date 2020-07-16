@@ -12,4 +12,12 @@ public class AccountTest {
         Account acct = new Account();
         assertThat(acct.balance()).isEqualTo(0);
     }
+
+    @Test
+    public void depositMultipleAmountstoAcctBalance(){
+        Account account = new Account();
+        account.deposit(10);
+        account.deposit(20);
+        assertThat(account.balance()).isEqualTo(30);
+    }
 }
