@@ -28,4 +28,11 @@ public class AccountTest {
         account.withdraw(20);
         assertThat(account.balance()).isEqualTo(20);
     }
-}
+    @Test
+    public void OpenAcctWithBalance(){
+        Account account = new Account();
+        account.deposit(100);
+        assertThat(account.balance()).isEqualTo(100);
+    }
+
+   }
