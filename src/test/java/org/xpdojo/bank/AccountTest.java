@@ -26,6 +26,6 @@ public class AccountTest {
         account.deposit(50);
         account.withdraw(10);
         account.withdraw(20);
-        assertThat(account.balance()).isEqualTo(30);
+        assertThat(account.balance()).isEqualTo(20);
     }
 }
